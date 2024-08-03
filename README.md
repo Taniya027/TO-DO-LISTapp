@@ -43,3 +43,31 @@ The application uses react-router-dom to handle URL parameters for search functi
 ## Setup and Run
 
 Follow these steps to set up and run the application:
+##Prerequisites
+Before you begin, ensure you have met the following requirements:
+
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- Node.js (v12 or higher)
+- npm (v6 or higher) or yarn (v1.22 or higher)
+
+## Installation
+
+1. Clone the repository:
+    git clone https://github.com/Taniya027/TO-DO-LISTapp.git
+    
+2. Navigate to the project directory:
+    cd TO-DO-LISTapp
+    
+3. Install the dependencies:
+    npm install
+
+## Running the Application
+
+To start the application in development mode, run:
+npm start
+   
+   
+
