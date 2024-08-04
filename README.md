@@ -36,3 +36,42 @@ sort: A value of a string indicating the order to apply for sorting (asc or desc
 expandIndex: The index of the open task (basically which task is currently expanded)
 
 Components
+
+App.js: Manages the state and passes down props to other components. It also handles adding, updating, deleting, and marking tasks as done.
+
+TodoInput.js: Contains an input field for adding new tasks.
+
+TodoList.js: Maps over the tasks array and renders each task, including options for editing, deleting, and expanding tasks.
+
+Data Handling
+
+The application uses a dummy JSON file (data.json) as the data repository. This file is loaded into the state when the application starts.
+
+URL Parameters
+
+The application uses react-router-dom to handle URL parameters for search functionality. The useSearchParams hook is used to read and set query parameters in the URL.
+
+Setup and Run
+
+Follow these steps to set up and run the application: 
+Prerequisites Before you begin, ensure you have met the following requirements:
+
+Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+Node.js (v12 or higher)
+
+npm (v6 or higher) or yarn (v1.22 or higher)
+
+Installation
+
+Clone the repository: git clone https://github.com/Taniya027/TO-DO-LISTapp.git
+
+Navigate to the project directory: cd TO-DO-LISTapp
+
+Install the dependencies: npm install
+
+Running the Application
+
+To start the application in development mode, run: npm start
