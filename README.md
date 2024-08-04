@@ -49,12 +49,12 @@ The application uses a dummy JSON file (data.json) as the data repository. This 
 
 URL Parameters
 
-The application uses react-router-dom to handle URL parameters for search functionality. The useSearchParams hook is used to read and set query parameters in the URL.
+The application uses react-router-dom to handle URL parameters for search functionality.
+The useSearchParams hook is used to read and set query parameters in the URL.
 
 Setup and Run
 
 Follow these steps to set up and run the application: 
-Prerequisites Before you begin, ensure you have met the following requirements:
 
 Prerequisites
 
