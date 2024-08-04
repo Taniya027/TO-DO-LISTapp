@@ -1,73 +1,38 @@
 # TO-DO-LISTapp
-## Overview
+Overview
 
-The To-Do List App is a simple yet functional application built with React. It allows users to manage their tasks effectively. Users can create, update, delete, and mark tasks as completed. The app also provides search functionality and sorting options and displays tasks in an expandable list format.
+To-Do List App - with React. Simple and usefulReact based solution to learn how we can work on the project functionality and connect things together in an app . This is because it helps in organising the tasks that users do. Create, read/list, update and delete given a task ID (user can mark it for marking it as done) The app offers search and sorts tasks displayed in an expandable list style.
 
-## System Design
+System Design
 
-The system consists of the following main components:
+This system is composed of the basic components below:
 
-1. *App Component*: The root component that holds the state and manages the overall functionality of the application.
-2. *TodoInput Component*: A component for adding new tasks.
-3. *TodoList Component*: A component that displays the list of tasks.
-4. *Task Item*: A component that represents an individual task in the list, displaying task details and providing options to edit, delete, and expand tasks.
-5. *Search and Filter Controls*: Components that allow the user to search for tasks and filter them based on their status (completed or pending).
-6. *Expandable Task Item*: A component that expands to show additional details about a task, such as the last updated timestamp.
+App Component: This is the First or Root component where state and everything else needed for this application can be managed.
 
-## Implementation
+TodoInput Component : This component will be used for adding new tasks.
 
-### State Management
+TodoList Component: This component is where our list of tasks will be shown.
 
-The application uses React's useState and useEffect hooks to manage the state and side effects. The state includes:
+Task Item: For an individual task in the list, showing details of a task and offering ways to edit or delete tasks as well as to see the full detail.
 
-- tasks: An array of task objects.
-- searchTerm: A string for the search input.
-- filter: A string representing the filter criteria (all, completed, or pending).
-- sort: A string representing the sort order (ascending or descending).
-- expandedIndex: An index representing which task is currently expanded.
+Search and Filter Controls: Search component to search for tasks, filter based on the status (completed or pending).
 
-### Components
+Expandable Task Item: expands to show more details of a task, such as last updated timestamp.
 
-1. *App.js*: Manages the state and passes down props to other components. It also handles adding, updating, deleting, and marking tasks as done.
-2. *TodoInput.js*: Contains an input field for adding new tasks.
-3. *TodoList.js*: Maps over the tasks array and renders each task, including options for editing, deleting, and expanding tasks.
+Implementation
 
-### Data Handling
+State Management
 
-The application uses a dummy JSON file (data.json) as the data repository. This file is loaded into the state when the application starts.
+The application handles the state and side effects using React useState and useEffect hooks The state includes:
 
-### URL Parameters
+tasks: Array of task object.
 
-The application uses react-router-dom to handle URL parameters for search functionality. The useSearchParams hook is used to read and set query parameters in the URL.
+searchTerm : A string for the search input..
 
-## Setup and Run
+filter - A string representing the filter criteria.
 
-Follow these steps to set up and run the application:
-##Prerequisites
-Before you begin, ensure you have met the following requirements:
+sort: A value of a string indicating the order to apply for sorting (asc or desc)
 
-## Prerequisites
+expandIndex: The index of the open task (basically which task is currently expanded)
 
-Before you begin, ensure you have met the following requirements:
-
-- Node.js (v12 or higher)
-- npm (v6 or higher) or yarn (v1.22 or higher)
-
-## Installation
-
-1. Clone the repository:
-    git clone https://github.com/Taniya027/TO-DO-LISTapp.git
-    
-2. Navigate to the project directory:
-    cd TO-DO-LISTapp
-    
-3. Install the dependencies:
-    npm install
-
-## Running the Application
-
-To start the application in development mode, run:
-npm start
-   
-   
-
+Components
